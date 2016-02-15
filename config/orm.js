@@ -1,5 +1,7 @@
 var connection = require('../config/connection.js');
 
+console.log("this works");
+
 var orm = {
     selectByPrice: function(tableInput) {
         var s = 'SELECT party_name FROM ' + tableInput + ' ORDER BY party_cost desc;';
